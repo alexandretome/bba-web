@@ -1,89 +1,707 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/10.7.1/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/10.7.1/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/10.7.1/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/10.7.1/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/10.7.1/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/10.7.1/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/10.7.1/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/10.7.1/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/10.7.1/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/10.7.1/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <title></title>
+  <meta name="generator" content="LibreOffice 7.3.7.2 (Linux)" />
+  <meta name="author" content="PHPDocX" />
+  <meta name="created" content="2012-01-10T09:29:00" />
+  <meta name="changedby" content="Thiago" />
+  <meta name="changed" content="2023-12-01T11:58:00" />
+  <meta name="AppVersion" content="16.0000" />
+  <style type="text/css">
+    @page {
+      size: 8.27in 11.69in;
+      margin-left: 0.98in;
+      margin-right: 0.98in;
+      margin-top: 0.98in;
+      margin-bottom: 0.49in
+    }
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+    p {
+      line-height: 115%;
+      text-align: left;
+      orphans: 2;
+      widows: 2;
+      margin-bottom: 0.1in;
+      direction: ltr;
+      background: transparent
+    }
+  </style>
+</head>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+<body lang="pt-BR" link="#000080" vlink="#800000" dir="ltr">
+  <p align="justify" style="line-height: 100%; margin-top: 0.17in; margin-bottom: 0.17in">
+    <font color="#000000">
+      <font size="3" style="font-size: 12pt">Este
+        aplicativo é mantido e operado por EATEASY SERVICOS DIGITAIS LTDA.</font>
+    </font>
+  </p>
+  <p align="justify" style="line-height: 100%; margin-top: 0.17in; margin-bottom: 0.17in">
+    <font color="#000000">
+      <font size="3" style="font-size: 12pt">Nós
+        coletamos e utilizamos alguns dados pessoais que pertencem àqueles
+        que utilizam nosso aplicativo. Ao fazê-lo, agimos na qualidade de
+      </font>
+    </font>
+    <font color="#000000">
+      <font size="3" style="font-size: 12pt"><b>controlador</b></font>
+    </font>
+    <font color="#000000">
+      <font size="3" style="font-size: 12pt">
+        desses dados e estamos sujeitos às disposições da Lei Federal n.
+        13.709/2018 (Lei Geral de Proteção de Dados Pessoais - LGPD).</font>
+    </font>
+  </p>
+  <p align="justify" style="line-height: 100%; margin-top: 0.17in; margin-bottom: 0.17in">
+    <font color="#000000">
+      <font size="3" style="font-size: 12pt">Nós
+        cuidamos da proteção de seus dados pessoais e, por isso,
+        disponibilizamos esta política de privacidade, que contém
+        informações importantes sobre:</font>
+    </font>
+  </p>
+  <p align="justify" style="line-height: 100%; margin-left: 0.31in; margin-top: 0.17in; margin-bottom: 0.17in">
+    <font color="#000000">
+      <font size="3" style="font-size: 12pt">- Quais
+        dados coletamos e o que fazemos com eles; &nbsp;<br />
+        - Seus direitos
+        em relação aos seus dados pessoais; e &nbsp;<br />
+        - Como entrar em
+        contato conosco. &nbsp;</font>
+    </font>
+  </p>
+  <p align="justify" style="line-height: 100%; margin-top: 0.17in; margin-bottom: 0.17in">
+    <font color="#000000">
+      <font size="3" style="font-size: 12pt"><b><br />
+          1.
+          DADOS QUE COLETAMOS E MOTIVOS DA COLETA</b></font>
+    </font>
+  </p>
+  <p align="justify" style="line-height: 100%; margin-top: 0.17in; margin-bottom: 0.17in">
+    <font color="#000000">
+      <font size="3" style="font-size: 12pt">Nosso
+        aplicativo coleta e utiliza alguns dados pessoais de nossos usuários,
+        de acordo com o disposto nesta seção.</font>
+    </font>
+  </p>
+  <p align="justify" style="line-height: 100%; margin-top: 0.17in; margin-bottom: 0.17in">
+    <font color="#000000">
+      <font size="3" style="font-size: 12pt"><i>1.
+          Dados pessoais fornecidos expressamente pelo usuário</i></font>
+    </font>
+  </p>
+  <p align="justify" style="line-height: 100%; margin-top: 0.17in; margin-bottom: 0.17in">
+    <font color="#000000">
+      <font size="3" style="font-size: 12pt"><br />
+        Nós
+        coletamos os seguintes dados pessoais que nossos usuários nos
+        fornecem expressamente ao utilizar nosso aplicativo:</font>
+    </font>
+  </p>
+  <p align="justify" style="line-height: 100%; margin-left: 0.31in; margin-top: 0.17in; margin-bottom: 0.17in">
+    <font color="#000000">
+      <font size="3" style="font-size: 12pt">Informações
+        relacionadas aos “sentimentos” do usuário - “Como você está
+        se sentindo hoje”. Informações sobre os “desafios” atuais dos
+        usuários - “Qual desses desafios é prioridade para você hoje”.
+        Ainda sobre o perfil, também coletamos as informações sobre como o
+        usuário está se sentindo sobre o seu desafio e sobre o seu
+        momento/sentimento após a leitura de versículos Bíblicos e
+        parábolas, incluindo, as motivações desses sentimentos e se o
+        versículo Bíblico contribuiu para ele se sentir melhor. Também
+        coletamos informações sobre a congregação que o usuário
+        participa, além de publicações realizadas em nossas redes sociais.
+        Outras informações são referentes ao perfil fornecido pelo login
+        social, como e-mail, nome, foto, e outros relacionados ao login
+        social quando aplicável.</font>
+    </font>
+  </p>
+  <p align="justify" style="line-height: 100%; margin-top: 0.17in; margin-bottom: 0.17in">
+    <font color="#000000">
+      <font size="3" style="font-size: 12pt">A coleta
+        destes dados ocorre nos seguintes momentos:</font>
+    </font>
+  </p>
+  <p align="justify" style="line-height: 100%; margin-left: 0.31in; margin-top: 0.17in; margin-bottom: 0.17in">
+    <font color="#000000">
+      <font size="3" style="font-size: 12pt">No
+        momento do login social e na definição do perfil do usuário
+        (incluindo o momento de atualização do perfil realizada pelo
+        próprio usuário). No momento que o usuário registra como se sente
+        e no uso das redes sociais dele. Também coletamos via utilização
+        de Qr code ou link externo disponibilizado para acesso ao aplicativo.</font>
+    </font>
+  </p>
+  <p align="justify" style="line-height: 100%; margin-top: 0.17in; margin-bottom: 0.17in">
+    <font color="#000000">
+      <font size="3" style="font-size: 12pt">Os dados
+        fornecidos por nossos usuários são coletados com as seguintes
+        finalidades:</font>
+    </font>
+  </p>
+  <p align="justify" style="line-height: 100%; margin-left: 0.31in; margin-top: 0.17in; margin-bottom: 0.17in">
+    <font color="#000000">
+      <font size="3" style="font-size: 12pt">Os dados
+        dos usuários são fundamentais para a aplicação prover
+        informações, conforme as necessidades individuais de cada cliente.
+        A identificação do usuário e dos seus respectivos momentos
+        emocionais (temas de interesse), viabiliza o fornecimento de
+        versículos Bíblicos, parábolas e fomento de rede social específica
+        para cada momento emocional do usuário. Os demais dados das redes
+        sociais, são coletados com o intuito de viabilizar a dinâmica da
+        rede com a respectiva troca de informações entre os usuários, além
+        de funcionalidades das funcionalidades da rede social. Também
+        coletamos dados específicos para inclusão dos usuários nas suas
+        respectivas congregações. Sobre o registro de como o usuário se
+        sente após a leitura dos versículos, o aplicativo fornece a
+        possibilidade do usuário acompanhar a evolução de como usuário
+        está se sentindo no decorrer do tempo e perceber sua evolução.</font>
+    </font>
+  </p>
+  <p align="justify" style="line-height: 100%; margin-top: 0.17in; margin-bottom: 0.17in">
+    <font color="#000000">
+      <font size="3" style="font-size: 12pt"><i>2.
+          Dados pessoais obtidos de outras formas</i></font>
+    </font>
+  </p>
+  <p align="justify" style="line-height: 100%; margin-top: 0.17in; margin-bottom: 0.17in">
+    <font color="#000000">
+      <font size="3" style="font-size: 12pt">Nós
+        coletamos os seguintes dados pessoais de nossos usuários:</font>
+    </font>
+  </p>
+  <p align="justify" style="line-height: 100%; margin-left: 0.31in; margin-top: 0.17in; margin-bottom: 0.17in">
+    <font color="#000000">
+      <font size="3" style="font-size: 12pt">Dados
+        relativos a utilização da aplicação, como navegação, sessões
+        acessadas, horários e tempo que ficam em cada sessão.</font>
+    </font>
+  </p>
+  <p align="justify" style="line-height: 100%; margin-top: 0.17in; margin-bottom: 0.17in">
+    <font color="#000000">
+      <font size="3" style="font-size: 12pt">A coleta
+        destes dados ocorre nos seguintes momentos:</font>
+    </font>
+  </p>
+  <p align="justify" style="line-height: 100%; margin-left: 0.31in; margin-top: 0.17in; margin-bottom: 0.17in">
+    <font color="#000000">
+      <font size="3" style="font-size: 12pt">Esses
+        dados são coletados durante a utilização do aplicativo</font>
+    </font>
+  </p>
+  <p align="justify" style="line-height: 100%; margin-top: 0.17in; margin-bottom: 0.17in">
+    <font color="#000000">
+      <font size="3" style="font-size: 12pt">Estes
+        dados são coletados com as seguintes finalidades:</font>
+    </font>
+  </p>
+  <p align="justify" style="line-height: 100%; margin-left: 0.31in; margin-top: 0.17in; margin-bottom: 0.17in">
+    <font color="#000000">
+      <font size="3" style="font-size: 12pt">Aprimoramento
+        da aplicação e aperfeiçoamento da experiência do usuário. Também
+        para garantir a segurança e autenticidade dos usuários, bem como
+        entender e prover de forma consolidada (jamais individualizada) como
+        é realizado o uso da aplicação para terceiros.</font>
+    </font>
+  </p>
+  <p align="justify" style="line-height: 100%; margin-top: 0.17in; margin-bottom: 0.17in">
+    <font color="#000000">
+      <font size="3" style="font-size: 12pt"><i>3.
+          Dados sensíveis</i></font>
+    </font>
+  </p>
+  <p align="justify" style="line-height: 100%; margin-top: 0.17in; margin-bottom: 0.17in">
+    <font color="#000000">
+      <font size="3" style="font-size: 12pt">O
+        aplicativo poderá coletar os seguintes dados sensíveis dos
+        usuários:</font>
+    </font>
+  </p>
+  <p style="line-height: 100%; margin-left: 0.31in; margin-top: 0.17in; margin-bottom: 0.17in">
+    <font color="#000000">
+      <font size="3" style="font-size: 12pt">- dados
+        sobre as convicções religiosas<br />
+        - dados sobre a filiação a
+        organização de caráter religioso<br />
+        - dados genéricos</font>
+    </font>
+  </p>
+  <p align="justify" style="line-height: 100%; margin-top: 0.17in; margin-bottom: 0.17in">
+    <font color="#000000">
+      <font size="3" style="font-size: 12pt">A coleta
+        de dados sensíveis ocorre nos seguintes momentos:</font>
+    </font>
+  </p>
+  <p align="justify" style="line-height: 100%; margin-left: 0.31in; margin-top: 0.17in; margin-bottom: 0.17in">
+    <font color="#000000">
+      <font size="3" style="font-size: 12pt">São
+        coletados testemunhos e comentários postados nas redes sociais (do
+        aplicativo) pelo próprio usuário. Coletamos também o nome da
+        congregação, em que o usuário fez sua filiação no aplicativo,
+        através de links, QR code e outras formas de comunicação das
+        congregações, vinculadas ao aplicativo. </font>
+    </font>
+  </p>
+  <p align="justify" style="line-height: 100%; margin-top: 0.17in; margin-bottom: 0.17in">
+    <font color="#000000">
+      <font size="3" style="font-size: 12pt">Estes
+        dados são coletados com as seguintes finalidades:</font>
+    </font>
+  </p>
+  <p align="justify" style="line-height: 100%; margin-left: 0.31in; margin-top: 0.17in; margin-bottom: 0.17in">
+    <font color="#000000">
+      <font size="3" style="font-size: 12pt">Para o
+        devido funcionamento das redes sociais, coletamos as informações
+        necessárias para entregar a dinâmica e a qualidade da rede social
+        da aplicação. Os dados das congregações, são utilizados para
+        afiliar o usuário na sua respectiva congregação (sempre que
+        solicitado por ele).</font>
+    </font>
+  </p>
+  <p align="justify" style="line-height: 100%; margin-top: 0.17in; margin-bottom: 0.17in">
+    <font color="#000000">
+      <font size="3" style="font-size: 12pt">A coleta
+        e a utilização de dados pessoais sensíveis somente será feita com
+        o consentimento específico e destacado de seus titulares, exceto, se
+        for o caso, nas hipóteses em que a Lei Geral de Proteção de Dados
+        permite o tratamento deste tipo de dados com fundamento em outras
+        bases legais distintas do consentimento.</font>
+    </font>
+  </p>
+  <p align="justify" style="line-height: 100%; margin-top: 0.17in; margin-bottom: 0.17in">
+    <font color="#000000">
+      <font size="3" style="font-size: 12pt">Em
+        qualquer caso, o tratamento de dados pessoais sensíveis somente
+        ocorrerá para atender a finalidades específicas expressas nesta
+        política ou devidamente informadas ao usuário por outros meios.</font>
+    </font>
+  </p>
+  <p style="line-height: 100%; margin-top: 0.17in; margin-bottom: 0.17in">
+    <font color="#000000">
+      <font size="3" style="font-size: 12pt"><i>4.
+          Coleta de dados não previstos expressamente<br />
+        </i></font>
+    </font>
+    <font color="#000000">
+      <font size="3" style="font-size: 12pt"><br />
+        Eventualmente,
+        outros tipos de dados não previstos expressamente nesta Política de
+        Privacidade poderão ser coletados, desde que sejam fornecidos com o
+        consentimento do usuário, ou, ainda, que a coleta seja permitida com
+        fundamento em outra base legal prevista em lei.</font>
+    </font>
+  </p>
+  <p align="justify" style="line-height: 100%; margin-top: 0.17in; margin-bottom: 0.17in">
+    <font color="#000000">
+      <font size="3" style="font-size: 12pt">Em
+        qualquer caso, a coleta de dados e as atividades de tratamento dela
+        decorrentes serão informadas aos usuários do aplicativo.</font>
+    </font>
+  </p>
+  <p align="justify" style="line-height: 100%; margin-top: 0.17in; margin-bottom: 0.17in">
+    <font color="#000000">
+      <font size="3" style="font-size: 12pt"><b><br />
+          2.
+          COMPARTILHAMENTO DE DADOS PESSOAIS COM TERCEIROS</b></font>
+    </font>
+  </p>
+  <p align="justify" style="line-height: 100%; margin-top: 0.17in; margin-bottom: 0.17in">
+    <font color="#000000">
+      <font size="3" style="font-size: 12pt">Nós
+        compartilhamos alguns dos dados pessoais mencionados nesta seção
+        com terceiros. Nenhum dado compartilhado é individualizado, ou seja,
+        os dados são agregados e jamais permitem a identificação de um ou
+        outro usuário (dados estatísticos consolidados).</font>
+    </font>
+  </p>
+  <p align="justify" style="line-height: 100%; margin-top: 0.17in; margin-bottom: 0.17in">
+    <font color="#000000">
+      <font size="3" style="font-size: 12pt">Os dados
+        compartilhados são os seguintes:</font>
+    </font>
+  </p>
+  <p style="line-height: 100%; margin-top: 0.17in; margin-bottom: 0.17in">
+    <font color="#000000">
+      <font size="3" style="font-size: 12pt">Dados
+        agregados e estatísticas de: sentimentos e desafios; tempo médio de
+        uso da aplicação; motivações; sessões mais visitadas do app;
+        volume de usuários que se sentem melhor com a palavra Bíblica;
+        informações sobre o sentimento após o contato com a palavra
+        Bíblica, sexo, idade, região, congregação. Todos estes dados
+        podem ser compartilhados com as congregações e outras instituições
+        de forma consolidada/agregada. Jamais de forma individualizada. Não
+        demonstraremos em hipótese alguma, qualquer dado que permita a
+        identificação de qualquer usuário da aplicação.<br />
+      </font>
+    </font>
+    <font color="#000000">
+      <font size="3" style="font-size: 12pt"><b><br />
+        </b></font>
+    </font>
+    <font color="#000000">
+      <font size="3" style="font-size: 12pt">Estes
+        dados são compartilhados pelas seguintes razões e para as seguintes
+        finalidades:</font>
+    </font>
+  </p>
+  <p style="line-height: 100%; margin-top: 0.17in; margin-bottom: 0.17in">
+    <font color="#000000">
+      <font size="3" style="font-size: 12pt">Promoção
+        e divulgação do aplicativo, evidenciando benefícios de bem-estar
+        gerados em sua comunidade. Dados estatísticas para as congregações
+        e instituições sobre anseios e necessidades dos seus fiéis,
+        viabilizando ajustes, adaptações e personalizações de cultos e
+        ofertas de serviços. </font>
+    </font>
+  </p>
+  <p style="line-height: 100%; margin-top: 0.17in; margin-bottom: 0.17in">
+    <font color="#000000">
+      <font size="3" style="font-size: 12pt">Além
+        das situações aqui informadas, é possível que compartilhemos
+        dados com terceiros para cumprir alguma determinação legal ou
+        regulatória, ou, ainda, para cumprir alguma ordem expedida por
+        autoridade pública. </font>
+    </font>
+  </p>
+  <p style="line-height: 100%; margin-top: 0.17in; margin-bottom: 0.17in">
+    <font color="#000000">
+      <font size="3" style="font-size: 12pt">Em
+        qualquer caso, o compartilhamento de dados pessoais observará todas
+        as leis e regras aplicáveis, buscando sempre garantir a segurança
+        dos dados de nossos usuários, observados os padrões técnicos
+        empregados no mercado.</font>
+    </font>
+  </p>
+  <p style="line-height: 100%; margin-top: 0.17in; margin-bottom: 0.17in">
+    <font color="#000000">
+      <font size="3" style="font-size: 12pt"><b><br />
+          3.</b></font>
+    </font>
+    <font color="#000000">
+      <font size="3" style="font-size: 12pt">
+      </font>
+    </font>
+    <font color="#000000">
+      <font size="3" style="font-size: 12pt"><b>POR
+          QUANTO TEMPO SEUS DADOS PESSOAIS SERÃO ARMAZENADOS</b></font>
+    </font>
+  </p>
+  <p align="justify" style="line-height: 100%; margin-top: 0.17in; margin-bottom: 0.17in">
+    <font color="#000000">
+      <font size="3" style="font-size: 12pt">Os dados
+        pessoais coletados pelo aplicativo são armazenados e utilizados por
+        período de tempo que corresponda ao necessário para atingir as
+        finalidades elencadas neste documento e que considere os direitos de
+        seus titulares, os direitos do controlador do aplicativo e as
+        disposições legais ou regulatórias aplicáveis.</font>
+    </font>
+  </p>
+  <p align="justify" style="line-height: 100%; margin-top: 0.17in; margin-bottom: 0.17in">
+    <font color="#000000">
+      <font size="3" style="font-size: 12pt">Uma vez
+        expirados os períodos de armazenamento dos dados pessoais, eles são
+        removidos de nossas bases de dados ou anonimizados, salvo nos casos
+        em que houver a possibilidade ou a necessidade de armazenamento em
+        virtude de disposição legal ou regulatória.</font>
+    </font>
+  </p>
+  <p align="justify" style="line-height: 100%; margin-top: 0.17in; margin-bottom: 0.17in">
+    <font color="#000000">
+      <font size="3" style="font-size: 12pt"><b><br />
+          4.
+          BASES LEGAIS PARA O TRATAMENTO DE DADOS PESSOAIS</b></font>
+    </font>
+  </p>
+  <p align="justify" style="line-height: 100%; margin-top: 0.17in; margin-bottom: 0.17in">
+    <font color="#000000">
+      <font size="3" style="font-size: 12pt">Cada
+        operação de tratamento de dados pessoais precisa ter um fundamento
+        jurídico, ou seja, uma base legal, que nada mais é que uma
+        justificativa que a autorize, prevista na Lei Geral de Proteção de
+        Dados Pessoais.</font>
+    </font>
+  </p>
+  <p align="justify" style="line-height: 100%; margin-top: 0.17in; margin-bottom: 0.17in">
+    <font color="#000000">
+      <font size="3" style="font-size: 12pt">Todas as
+        Nossas atividades de tratamento de dados pessoais possuem uma base
+        legal que as fundamenta, dentre as permitidas pela legislação. Mais
+        informações sobre as bases legais que utilizamos para operações
+        de tratamento de dados pessoais específicas podem ser obtidas a
+        partir de nossos canais de contato, informados ao final desta
+        Política.</font>
+    </font>
+  </p>
+  <p align="justify" style="line-height: 100%; margin-top: 0.17in; margin-bottom: 0.17in">
+    <font color="#000000">
+      <font size="3" style="font-size: 12pt"><b><br />
+          5.
+          DIREITOS DO USUÁRIO</b></font>
+    </font>
+  </p>
+  <p align="justify" style="line-height: 100%; margin-top: 0.17in; margin-bottom: 0.17in">
+    <font color="#000000">
+      <font size="3" style="font-size: 12pt">O
+        usuário do aplicativo possui os seguintes direitos, conferidos pela
+        Lei de Proteção de Dados Pessoais:</font>
+    </font>
+  </p>
+  <p align="justify" style="line-height: 100%; margin-left: 0.31in; margin-top: 0.17in; margin-bottom: 0.17in">
+    <font color="#000000">
+      <font size="3" style="font-size: 12pt">-
+        confirmação da existência de tratamento; &nbsp;<br />
+        - acesso aos
+        dados; &nbsp;<br />
+        - correção de dados incompletos, inexatos ou
+        desatualizados; &nbsp;<br />
+        - anonimização, bloqueio ou eliminação
+        de dados desnecessários, excessivos ou tratados em desconformidade
+        com o disposto na lei; &nbsp;<br />
+        - portabilidade dos dados a outro
+        fornecedor de serviço ou produto, mediante requisição expressa, de
+        acordo com a regulamentação da autoridade nacional, observados os
+        segredos comercial e industrial; &nbsp;<br />
+        - eliminação dos dados
+        pessoais tratados com o consentimento do titular, exceto nos casos
+        previstos em lei; &nbsp;<br />
+        - informação das entidades públicas
+        e privadas com as quais o controlador realizou uso compartilhado de
+        dados; &nbsp;<br />
+        - informação sobre a possibilidade de não
+        fornecer consentimento e sobre as consequências da negativa; &nbsp;<br />
+        -
+        revogação do consentimento.</font>
+    </font>
+  </p>
+  <p align="justify" style="line-height: 100%; margin-top: 0.17in; margin-bottom: 0.17in">
+    <font color="#000000">
+      <font size="3" style="font-size: 12pt">É
+        importante destacar que, nos termos da LGPD, não existe um direito
+        de eliminação de dados tratados com fundamento em bases legais
+        distintas do consentimento, a menos que os dados seja desnecessários,
+        excessivos ou tratados em desconformidade com o previsto na lei.</font>
+    </font>
+  </p>
+  <p align="justify" style="line-height: 100%; margin-top: 0.17in; margin-bottom: 0.17in">
+    <font color="#000000">
+      <font size="3" style="font-size: 12pt"><i>1.
+          Como o titular pode exercer seus direitos</i></font>
+    </font>
+  </p>
+  <p style="line-height: 100%; margin-top: 0.17in; margin-bottom: 0.17in">
+    <font color="#000000">
+      <font size="3" style="font-size: 12pt">Os
+        titulares de dados pessoais tratados por nós poderão exercer seus
+        direitos por meio da opção de exclusão de contas e respectiva
+        remoção de todos os respectivos dados pessoais da nossa base de
+        dados. Alternativamente, se desejar, o titular poderá enviar um
+        e-mail ao nosso Encarregado de Proteção de Dados Pessoais. As
+        informações necessárias para isso estão na seção &quot;Como
+        entrar em contato conosco&quot; desta Política de Privacidade.<br />
+        <br />
+        Para
+        garantir que o usuário que pretende exercer seus direitos é, de
+        fato, o titular dos dados pessoais objeto da requisição, poderemos
+        solicitar documentos ou outras informações que possam auxiliar em
+        sua correta identificação, a fim de resguardar nossos direitos e os
+        direitos de terceiros. Isto somente será feito, porém, se for
+        absolutamente necessário, e o requerente receberá todas as
+        informações relacionadas.
+      </font>
+    </font>
+  </p>
+  <p align="justify" style="line-height: 100%; margin-top: 0.17in; margin-bottom: 0.17in">
+    <font color="#000000">
+      <font size="3" style="font-size: 12pt"><b><br />
+          6.</b></font>
+    </font>
+    <font color="#000000">
+      <font size="3" style="font-size: 12pt">
+      </font>
+    </font>
+    <font color="#000000">
+      <font size="3" style="font-size: 12pt"><b>MEDIDAS
+          DE SEGURANÇA NO TRATAMENTO DE DADOS PESSOAIS</b></font>
+    </font>
+  </p>
+  <p align="justify" style="line-height: 100%; margin-top: 0.17in; margin-bottom: 0.17in">
+    <font color="#000000">
+      <font size="3" style="font-size: 12pt">Empregamos
+        medidas técnicas e organizativas aptas a proteger os dados pessoais
+        de acessos não autorizados e de situações de destruição, perda,
+        extravio ou alteração desses dados.</font>
+    </font>
+  </p>
+  <p align="justify" style="line-height: 100%; margin-top: 0.17in; margin-bottom: 0.17in">
+    <font color="#000000">
+      <font size="3" style="font-size: 12pt">As
+        medidas que utilizamos levam em consideração a natureza dos dados,
+        o contexto e a finalidade do tratamento, os riscos que uma eventual
+        violação geraria para os direitos e liberdades do usuário, e os
+        padrões atualmente empregados no mercado por empresas semelhantes à
+        nossa.</font>
+    </font>
+  </p>
+  <p align="justify" style="line-height: 100%; margin-top: 0.17in; margin-bottom: 0.17in">
+    <font color="#000000">
+      <font size="3" style="font-size: 12pt">Entre as
+        medidas de segurança adotadas por nós, destacamos as seguintes:</font>
+    </font>
+  </p>
+  <p align="justify" style="line-height: 100%; margin-left: 0.31in; margin-top: 0.17in; margin-bottom: 0.17in">
+    <font color="#000000">
+      <font size="3" style="font-size: 12pt">O
+        armazenamento de senhas é realizado através de hashes
+        criptografadas. Os acessos aos bancos de dados são restritos aos
+        empregados diretos do EayEasy.</font>
+    </font>
+  </p>
+  <p align="justify" style="line-height: 100%; margin-top: 0.17in; margin-bottom: 0.17in">
+    <font color="#000000">
+      <font size="3" style="font-size: 12pt">Ainda
+        que adote tudo o que está ao seu alcance para evitar incidentes de
+        segurança, é possível que ocorra algum problema motivado
+        exclusivamente por um terceiro - como em caso de ataques de </font>
+    </font>
+    <font color="#000000">
+      <font size="3" style="font-size: 12pt"><i>hackers</i></font>
+    </font>
+    <font color="#000000">
+      <font size="3" style="font-size: 12pt">
+        ou </font>
+    </font>
+    <font color="#000000">
+      <font size="3" style="font-size: 12pt"><i>crackers</i></font>
+    </font>
+    <font color="#000000">
+      <font size="3" style="font-size: 12pt">
+        ou, ainda, em caso de culpa exclusiva do usuário, que ocorre, por
+        exemplo, quando ele mesmo transfere seus dados a terceiro. Assim,
+        embora sejamos, em geral, responsáveis pelos dados pessoais que
+        tratamos, nos eximimos de responsabilidade caso ocorra uma situação
+        excepcional como essas, sobre as quais não temos nenhum tipo de
+        controle.</font>
+    </font>
+  </p>
+  <p align="justify" style="line-height: 100%; margin-top: 0.17in; margin-bottom: 0.17in">
+    <font color="#000000">
+      <font size="3" style="font-size: 12pt">De
+        qualquer forma, caso ocorra qualquer tipo de incidente de segurança
+        que possa gerar risco ou dano relevante para qualquer de nossos
+        usuários, comunicaremos os afetados e a Autoridade Nacional de
+        Proteção de Dados acerca do ocorrido, em conformidade com o
+        disposto na Lei Geral de Proteção de Dados.</font>
+    </font>
+  </p>
+  <p align="justify" style="line-height: 100%; margin-top: 0.17in; margin-bottom: 0.17in">
+    <font color="#000000">
+      <font size="3" style="font-size: 12pt"><b><br />
+          7.</b></font>
+    </font>
+    <font color="#000000">
+      <font size="3" style="font-size: 12pt">
+      </font>
+    </font>
+    <font color="#000000">
+      <font size="3" style="font-size: 12pt"><b>RECLAMAÇÃO
+          A UMA AUTORIDADE DE CONTROLE</b></font>
+    </font>
+  </p>
+  <p align="justify" style="line-height: 100%; margin-top: 0.17in; margin-bottom: 0.17in">
+    <font color="#000000">
+      <font size="3" style="font-size: 12pt">Sem
+        prejuízo de qualquer outra via de recurso administrativo ou
+        judicial, os titulares de dados pessoais que se sentirem, de qualquer
+        forma, lesados, podem apresentar reclamação à Autoridade Nacional
+        de Proteção de Dados. Desde já, reiteremos nosso interesse em
+        esclarecer, apoiar e sanar qualquer dúvida ou necessidade do
+        usuário, salvo eminente prejuízo ao EatEasy ou a algum dos seus
+        usuários.</font>
+    </font>
+  </p>
+  <p align="justify" style="line-height: 100%; margin-top: 0.17in; margin-bottom: 0.17in">
+    <font color="#000000">
+      <font size="3" style="font-size: 12pt"><b><br />
+          <br />
+          8.
+          ALTERAÇÕES NESTA POLÍTICA</b></font>
+    </font>
+  </p>
+  <p align="justify" style="line-height: 100%; margin-top: 0.17in; margin-bottom: 0.17in">
+    <font color="#000000">
+      <font size="3" style="font-size: 12pt">A
+        presente versão desta Política de Privacidade foi atualizada pela
+        última vez em: 30/11/2023.</font>
+    </font>
+  </p>
+  <p align="justify" style="line-height: 100%; margin-top: 0.17in; margin-bottom: 0.17in">
+    <font color="#000000">
+      <font size="3" style="font-size: 12pt">Reservamo-nos
+        o direito de modificar, a qualquer momento, as presentes normas,
+        especialmente para adaptá-las às eventuais alterações feitas em
+        nosso aplicativo, seja pela disponibilização de novas
+        funcionalidades, seja pela supressão ou modificação daquelas já
+        existentes.</font>
+    </font>
+  </p>
+  <p align="justify" style="line-height: 100%; margin-top: 0.17in; margin-bottom: 0.17in">
+    <font color="#000000">
+      <font size="3" style="font-size: 12pt">Sempre
+        que houver uma modificação, nossos usuários serão notificados
+        acerca da mudança.</font>
+    </font>
+  </p>
+  <p align="justify" style="line-height: 100%; margin-top: 0.17in; margin-bottom: 0.17in">
+    <font color="#000000">
+      <font size="3" style="font-size: 12pt"><b><br />
+          9.</b></font>
+    </font>
+    <font color="#000000">
+      <font size="3" style="font-size: 12pt">
+      </font>
+    </font>
+    <font color="#000000">
+      <font size="3" style="font-size: 12pt"><b>COMO
+          ENTRAR EM CONTATO CONOSCO</b></font>
+    </font>
+  </p>
+  <p align="justify" style="line-height: 100%; margin-top: 0.17in; margin-bottom: 0.17in">
+    <font color="#000000">
+      <font size="3" style="font-size: 12pt">Para
+        esclarecer quaisquer dúvidas sobre esta Política de Privacidade ou
+        sobre os dados pessoais que tratamos, entre em contato com nosso
+        Encarregado de Proteção de Dados Pessoais, por algum dos canais
+        mencionados abaixo:</font>
+    </font>
+  </p>
+  <p align="justify" style="line-height: 100%; margin-left: 0.31in; margin-top: 0.17in; margin-bottom: 0.17in">
+    <font color="#000000">
+      <font size="3" style="font-size: 12pt"><i>E-mail</i></font>
+    </font>
+    <font color="#000000">
+      <font size="3" style="font-size: 12pt">:
+        dados_pessoais@bibliapp.com.br</font>
+    </font>
+  </p>
+  <p align="justify" style="line-height: 100%; margin-left: 0.31in; margin-top: 0.17in; margin-bottom: 0.17in">
+    <font color="#000000">
+      <font size="3" style="font-size: 12pt">Endereço
+        postal: Avenida Raja Gabaglia, 1000, sala 409. Belo Horizonte, MG.</font>
+    </font>
+  </p>
+  <div title="footer">
+    <p align="right" style="margin-top: 0.45in; margin-bottom: 0.14in">
+      <font color="#808080"><span style="background: #c0c0c0">
+          <sdfield type=PAGE subtype=RANDOM format=PAGE>6</sdfield>
+        </span>
+        <font size="2" style="font-size: 10pt"><i>/<span style="background: #c0c0c0">
+              <sdfield type=DOCSTAT subtype=PAGE format=PAGE>6</sdfield>
+            </span></i></font>
+      </font>
+    </p>
+  </div>
+</body>
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
 </html>
